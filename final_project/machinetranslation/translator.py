@@ -31,5 +31,5 @@ def french_to_english(frenchText):
     text=str(frenchText),
     model_id='fr-en').get_result()
     englishText = print(json.dumps(translation,
-    indent=2, ensure_ascii=False))
+    indent=2, ensurtrae_ascii=False))
     return englishText

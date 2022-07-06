@@ -11,11 +11,12 @@ def englishToFrench():
     french = print(translator.english_to_french(textToTranslate))
     return ("Translated text to French:", french)
 
-# @app.route("/frenchToEnglish")
-# def frenchToEnglish():
-#     textToTranslate = request.args.get('textToTranslate')
-#     # Write your code here
-#     return "Translated text to English"
+@app.route("/frenchToEnglish")
+def frenchToEnglish():
+    textToTranslate = request.args.get(' ')
+    # Write your code here
+    english = print(translator.french_to_english(textToTranslate))
+    return ("Translated text to French:", english)
 
 @app.route("/")
 def renderIndexPage():
